@@ -1,0 +1,47 @@
+facebook.com ->   signup.html 
+
+
+signup.html -> first name , email , password -> fill -> submit -> request{fn,em,pwd} -->server 
+
+server --> accept -> process -> response { valid ,invalid } 
+
+
+client - user ==> request ==> server ==> accept request ==> process => response 
+
+
+client -> request -> server -> response -> client 
+ 
+ 
+2tier -> 
+3tier ->   
+		client => server => dbserver => response 
+nTier -> 
+
+---------------------------------------------------------
+
+who is going to serve the request ==> server ? 
+
+j2EE -> servlet -> 
+
+what is the servlet ? 
+
+servlet is your own class -> who extends HTTPServlet class 
+
+class A extends Thread -> run()
+class A extends HttpServlet ->  service()
+
+1) SignupServlet { class extends HttpServlet } 
+2) service() -> override {doPost doGet } 
+3) url mapping -> browser url? 
+
+
+servlet -> servlet-api.jar 
+
+tomcat/lib -> 
+
+how to link lib from tomcat/lib ? 
+
+
+
+
+
