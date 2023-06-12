@@ -42,6 +42,46 @@ tomcat/lib ->
 how to link lib from tomcat/lib ? 
 
 
+-------------------
+
+Calc.html 
+no1 [    ]
+no2 [    ]
+
+add()  sub()  mul(*) 
+
+Submit 
+
+-----------------------------------------
+
+HTML is not deal with any programming lang. 
+	java 
+	
+JEE -> 
+		JSP : java server pages | java servlet pages
+		
+		jsp -> html + java 
+		
+		by default jsp understand html 
+
+	1) <%  %>  scriptlet    --> any java logic on jsp  
+	2) <%= %>  expression   --> print anything on jsp 
+	3) <%! %>  declaration  --> declare variable on jsp 
+	
+all jsp will get 9 implicit objects 
+	1) request 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -5,19 +5,17 @@ import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class SignupServlet extends HttpServlet {
+@WebServlet("/RegistrationServlet")
+public class RegistrationServlet extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		System.out.println("InSignupServlet....");
-
-		// request-map-> key : value
-		// if name/parameter name is wrong then you will get null
 		String firstName = request.getParameter("firstName");// always return string from request
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
@@ -39,30 +37,13 @@ public class SignupServlet extends HttpServlet {
 			isError = true;
 			error += "Please Enter Password<br>";
 		}
-		// send user's data as response
-
-		// old
-		// servlet -> html -> client
-
-		response.setContentType("text/html");// MIME
-
-		// server --- client ->stream { data }
-
-		PrintWriter out = response.getWriter(); // open stream
-
-		out.print("<html><body>"); // => browser
-
 		if (isError == true) {
-//			out.print(error);
-			request.setAttribute("error", error); // key:value  String:Object
-			RequestDispatcher rd = request.getRequestDispatcher("Signup.html");
+			request.setAttribute("error", error); // key:value String:Object
+			RequestDispatcher rd = request.getRequestDispatcher("Registration.jsp");
 			rd.forward(request, response);
 		} else {
-			out.print("FirstName : " + firstName + "<BR><BR>");
-			out.print("Email : " + email + "<br><BR>");
-			out.print("Password : " + password);
+			RequestDispatcher rd = request.getRequestDispatcher("Login.jsp");
+			rd.forward(request, response);
 		}
-		out.print("</body></html>");
-
 	}
 }
