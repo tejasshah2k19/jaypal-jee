@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,18 +8,28 @@
 </head>
 <body>
 
-<%
-	String error = (String)request.getAttribute("error");
-%>
+	<%
+		String error = (String) request.getAttribute("error");
+		String firstNameError = (String) request.getAttribute("firstNameError");
+		String emailError = (String) request.getAttribute("emailError");
+		String passwordError = (String) request.getAttribute("passwordError");
 
-<form action="RegistrationServlet" method="post">
-	FirstName : <input type="text" name="firstName"><br><br> 
-	Email : <input type="text" name="email"><br><br>
-	Password : <input type="text" name="password"><br><br>
-	
-	<input type="submit" value="Signup"/>
-</form>
-<%=error==null?"":error %>
+		String firstNameValue = (String) request.getAttribute("firstNameValue");
+	%>
+
+	<form action="RegistrationServlet" method="post">
+
+		FirstName : <input type="text" name="firstName"
+			value="<%=firstNameValue == null ? "" : firstNameValue%>">
+
+		<%=firstNameError == null ? "" : firstNameError%>
+		<br> <br> Email : <input type="text" name="email">
+		<%=emailError == null ? "" : emailError%>
+		<br> <br> Password : <input type="text" name="password">
+		<%=passwordError == null ? "" : passwordError%>
+		<br> <br> <input type="submit" value="Signup" />
+	</form>
+	<%=error == null ? "" : error%>
 
 </body>
 </html>
