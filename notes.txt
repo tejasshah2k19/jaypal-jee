@@ -73,7 +73,12 @@ all jsp will get 9 implicit objects
 
 
 
+gender  : radio  -> select 
+country : select -> select 
+hobby   : checkbox -> 2 select 
+read and validate 
 
+--------------------------------------------------------------
 
 
 
