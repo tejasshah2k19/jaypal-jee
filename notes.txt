@@ -80,6 +80,52 @@ read and validate
 
 --------------------------------------------------------------
 
+servlet life cycle --> 
+
+
+LoginServlet ->
+
+1) load class
+2) create instance 
+3) init() | init(ServletConfig) 
+4) service()
+5) destroy()  -> shutdown server 
+
+
+instance -> thread -> 
+if you make a request 500 times 
+
+1 instance -> 500 threads -> 1 time init -> 500 times service 
+CGI -> 500 request -> 500 instance 
+-------------------------------------------------------------
+
+filter = preprocess the request 
+
+									
+									
+	filter	request	preProcess		servlet				
+									
+									
+	login		blacklistfilter		icicbank	loginservlet			
+			pak						
+			banga						
+									
+									
+	whatsapp		image	50 mb		server		50 mb	y
+	x								
+	x	image	filter	compress image	10 mb	server		10 mb	y
+	x	text	filter	enctext		server		enctext	y 
+
+
+
+1) implements Filter 
+2) init doFilter destroy 
+3) mapping -> servlet 
+
+
+
+
+
 
 
 
