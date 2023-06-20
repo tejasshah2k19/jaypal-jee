@@ -122,15 +122,46 @@ filter = preprocess the request
 2) init doFilter destroy 
 3) mapping -> servlet 
 
+-------------------------------------------------------------
+login -> servlet -> email password -> db -> information -> 
+				store -> jsp -> read print 
+				
+				
+	j2ee :
+			1) cookie  -> store ? memory ? -> client browser -> browser -> less secure  
+			2) session -> memory -> server -> secure 
+			
+		info-> privacy , security -> session  { pwd, otp, ccNum } 
+		info -> public  -> cookie   { firstName , email } 
 
 
 
 
+Login -> access -> logout/close browser --> logout 
 
+Login -> XXX -> logout 
+				auto login --> cookie --> 7 days 
+								-> 3 days -> renew 
+										  -> 7 days 
+NewCookie.jsp 
+	CookieName [     ] 
+	CookeValue [     ] 
+			[Save] 
 
+ListAllCookies-> 
 
+AddCookieServlet 
+	read name and value from the form 
+	add -> name , value 
+	redirect -> NewCookie.jsp
+	
+	
 
-
+ListAllCookies-> it will open a new serlvet that read all cookies from browser and print on browser 
+CookieName [    ] 
+	[Delete] 
+DeleteCookieServlet -> delete the cookie 
+------------------------------------------------------------
 
 
 
