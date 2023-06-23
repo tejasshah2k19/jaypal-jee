@@ -162,6 +162,51 @@ CookieName [    ]
 	[Delete] 
 DeleteCookieServlet -> delete the cookie 
 ------------------------------------------------------------
+Login.jsp -> x:y -> submit -> servlet ->Home.jsp 
+	browser close ->
+	open -> Login.jsp ->redirect -> Home.jsp -> Logout ->Login.jsp 
+	close browser -> 
+	open -> Home.jsp -> Login.jsp 
+	 
+------------------------------------------------------------------	
+
+user1 -> request -> X.jsp -> form,hidden{cookie->JSESSIONID}X    			memory 
+				user1:browser		<----response<---JSESsionId			session:user1:123 					
+
+user1 -> 2nd request -> Y.jsp -> cookie jsessionid :123 -->              jsessionid? valid? 123
+
+
+HttpSesssion session  = request.getSession();//existing - new 
+
+HttpSesssion session  = request.getSession(false);//existing - do not create new if not present 
+
+session.setAttribute("userId",123);
+
+int userId = (Integer) session.getAttirbute("userId");
+
+
+1) Logout -> LogoutServlet -> 	
+			HttpSession session = request.getSession();
+			session.invalidate(); //destroy session
+2)  
+			HttpSession session = request.getSession();
+			session.setMaxInactiveInterval(60*5);//second
+3) 
+		web.xml => minutes 
+				<session-config>
+					<session-timeout>5</session-timeout>
+				</session-config>
+	
+---------------------------------------------------------------------------------			
+
+
+
+
+
+
+
+
+
 
 
 

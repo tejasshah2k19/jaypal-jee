@@ -20,5 +20,13 @@
 	<%
 		}
 	%>
+	
+	<br><br>
+	<form action="DeleteCookieServlet">
+		CookieName:<input type="text" name="cookieName"/><br><BR>
+		
+		<input type="submit" value="Delete Cookie"/>
+	</form>
+	
 </body>
 </html>
