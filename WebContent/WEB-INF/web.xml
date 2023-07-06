@@ -58,4 +58,11 @@
 		<session-timeout>5</session-timeout>
 	</session-config>
 
+
+	<listener>
+		<listener-class>com.google.listener.UserCounterListener</listener-class>
+	</listener>
+
+
+
 </web-app>

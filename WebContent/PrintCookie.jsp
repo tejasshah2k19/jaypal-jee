@@ -7,6 +7,8 @@
 <title>All Cookie</title>
 </head>
 <body>
+
+
 	<%
 		Cookie c[] = (Cookie[]) request.getAttribute("c");
 	%>

@@ -200,9 +200,28 @@ int userId = (Integer) session.getAttirbute("userId");
 ---------------------------------------------------------------------------------			
 
 
+Listener :- listen the events -> http - web 
+
+request->set remove { settAttribute} 
+
+session create / destroy 
+
+server start / stop 
 
 
+site -> user's online ->session created -> count -> 
 
+	session created -> count++
+	session destroyed -> count--
+	
+server --> aws -> connection establish
+server --> aws -> connection stop 
+
+1) class implements XXXListener -> override 
+2) web.xml mapping 
+
+
+-----------------------------------------------------------------------------------------
 
 
 
