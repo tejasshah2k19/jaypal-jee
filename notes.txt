@@ -223,10 +223,16 @@ server --> aws -> connection stop
 
 -----------------------------------------------------------------------------------------
 
+mysql,pg,sqllite,oracle, -> link db dep of database 
+jar -> vendor -> 
 
+lib->paste->link->javabuildpath->as add jar -> 
 
+execute query in db -> Statement , PreparedStatement , CallableStatement*** 
+stmt->sql->compile->parse->optimize-> execute 
+pstmt->once->execute->second->prepared->execute 
 
-
+----------------------------------------------------------------------------------------
 
 
 
