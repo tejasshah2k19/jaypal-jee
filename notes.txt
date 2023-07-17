@@ -233,6 +233,17 @@ stmt->sql->compile->parse->optimize-> execute
 pstmt->once->execute->second->prepared->execute 
 
 ----------------------------------------------------------------------------------------
+servlet -> data set -> 
+
+webapp -> single admin ->nodb -> email and password ? 
+
+
+
+admin -> Login.jsp -> email and password -> LoginServlet {config} ->
+ 
+
+
+
 
 
 
