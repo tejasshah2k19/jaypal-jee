@@ -241,8 +241,19 @@ webapp -> single admin ->nodb -> email and password ?
 
 admin -> Login.jsp -> email and password -> LoginServlet {config} ->
  
+------------------------------------------------------------------------
+
+request -> servlet load -> load class-instance -thread -> process:service 
 
 
+server start -> servlet load -> 
+
+server start -> x servlet y servlet z servlet 
+
+1
+2
+3
+--------------------------------------------------------
 
 
 

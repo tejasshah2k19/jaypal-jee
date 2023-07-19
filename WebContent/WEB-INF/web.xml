@@ -90,6 +90,7 @@
 			<param-name>password</param-name>
 			<param-value>admin123</param-value>
 		</init-param>
+		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>AdminLoginServlet</servlet-name>
@@ -101,7 +102,12 @@
 		<param-value>admin2@gmail.com</param-value>
 	</context-param>
 	<context-param>
-		 <param-name>password</param-name>
-		 <param-value>admin1234</param-value>
+		<param-name>password</param-name>
+		<param-value>admin1234</param-value>
 	</context-param>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/404.jsp</location>
+	</error-page>
+	
 </web-app>
