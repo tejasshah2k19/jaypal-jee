@@ -267,6 +267,39 @@ jsp lifecycle
 
 ------------------------------------------------------------
 
+java standard tag library - JSTL 
+
+
+<% int x =20; %> 
+
+<%=x %> 
+
+
+<b> <i> -> java -> tag -> jstl
+
+1) core*** 
+2) sql 
+3) format 
+4) xml 
+5) function 
+
+
+1) jar -> lib -> jstl.jar 
+2) jsp import -> taglib 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
 
 
 
