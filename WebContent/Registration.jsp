@@ -10,8 +10,7 @@
 
 	<%
 		String error = (String) request.getAttribute("error");
-		String firstNameError = (String) request.getAttribute("firstNameError");
-		String emailError = (String) request.getAttribute("emailError");
+	 	String emailError = (String) request.getAttribute("emailError");
 		String passwordError = (String) request.getAttribute("passwordError");
 
 		String firstNameValue = (String) request.getAttribute("firstNameValue");
@@ -22,7 +21,7 @@
 		FirstName : <input type="text" name="firstName"
 			value="<%=firstNameValue == null ? "" : firstNameValue%>">
 
-		<%=firstNameError == null ? "" : firstNameError%>
+	 	${firstNameError }
 		<br> <br> Email : <input type="text" name="email">
 		<%=emailError == null ? "" : emailError%>
 		<br> <br> Password : <input type="text" name="password">

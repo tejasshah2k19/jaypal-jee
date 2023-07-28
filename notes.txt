@@ -288,10 +288,118 @@ java standard tag library - JSTL
 2) jsp import -> taglib 
 
 
+-----------------------------------------------------------------------------------------------------------
+age < 18
+	Less Chance 5% 
+	
+18-60
+			gender 
+      male 			female 
+      smoke      	  25%      
+   yes    no
+  50%     25% 
 
+age > 60 
+
+diabetic    &&  bp [ both are ] 
+    75%  
+only diabetic 
+   50% 
+
+only bp 
+ 65% 
+no diabetic no bp 
+ 30%  
+
+
+
+
+on submit we will print all input on next page 
+we also print heart dis. %chance with above data
+
+also we need to insert all this patient data into database. 
+we also need to validate -> name gender and age must be present
+ 
+----------------------------------------------------------------------------------------------------- 
 
 
  
+---------------------------------------------------------------
+page -> directive ->
+	import , autoFlush , session , 
+	
+	
+9 implicit object in jsp
+
+page 
+out
+pageContext 
+request
+response
+session
+application
+config 
+exception 
+
+
+
+scope -> 
+	page    |  A -> A  
+	request |  A -> B 
+	session |  A -> B C D E { whole application } { limited to that user-individual user-wise} 
+	application | A -> B C D E { whole appliation } {common for all user } 
+-----------------------------------------------------
+
+Reusable web component -> inclusion 
+
+HEADER 
+content
+FOOTER 
+	
+	
+	1) static inclusion
+	2) dynamic inclusion 
+	
+	<jsp:include page=""/> -> dynamic inclusion 
+	<%@include file=""%>   -> static inclusion 
+
+directive -> 
+		1) <%@ page %>
+		2) <%@ taglib %> 
+		3) <%@ include %>
+ 
+
+
+static ->   A.jsp 3 line  B.jsp 2 line ->  B.jsp include A.jsp -> {cod copied in B.jsp}
+													   	 	 	  B.jsp {2+3} => 5 line 
+dynamic -> A.jsp  3 line  B.jsp 2 line ->  B.jsp include A.jsp =>
+				B.jsp->   goto A.jsp and append the output --> no code will copied in B.jsp
+
+------------------------------------------
+
+EL 
+
+${error} 
+${firstNameError}
+ 
+	page , request ,session, application ---> blank 
+
+${pageScope.error}  
+${requestScope.error}  
+${sessionScope.error}  
+${applicationScope.error}  
+
+${cookie.userName.value}
+
+
+----------------------------------------------------
+EL function
+
+1) class -> logic 
+2) .tld -> info
+3) web.xml -> .tld 
+4) import jsp use 
+----------------------------------------------------
 
 
 
