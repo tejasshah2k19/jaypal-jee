@@ -13,6 +13,7 @@
 <body>
 ${e:greet() }<br>
 
-<s:date></s:date>
+<s:date></s:date><br>
+<s:today format="mm-dd-yyyy"/>
 </body>
 </html>

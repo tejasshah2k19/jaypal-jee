@@ -432,6 +432,10 @@ add jsp-api.jar in your project -> from tomcat lib { same as servlet-api }
 <date></date>  -> no body no attribute 
 
 
+<date format="dd-mm-yyyy"></date>
+<date format="yyyy-mm-dd"></date>
+<date format="mm-dd-yyyy"></date>
+
 
 
 
