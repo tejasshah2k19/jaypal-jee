@@ -401,6 +401,53 @@ EL function
 4) import jsp use 
 ----------------------------------------------------
 
+${greet()}
+
+<greet></greet> 
+Good Morning 
+
+
+
+<sum n1="2" n2="3"></sum> => 5 
+
+<b>test</b> 
+
+<title>royal edu india</title>
+Royal Edu India
+
+
+custom	tag -> 
+			1) simple tag 
+			2) classic tag 
+
+add jsp-api.jar in your project -> from tomcat lib { same as servlet-api } 
+
+
+1) tag handler -> logic 
+2) .tld  {define tag description}
+3) web.xml {map tld} 
+4) jsp use { taglib import } 
+
+
+<date></date>  -> no body no attribute 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
