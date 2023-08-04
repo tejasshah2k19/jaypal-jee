@@ -436,10 +436,19 @@ add jsp-api.jar in your project -> from tomcat lib { same as servlet-api }
 <date format="yyyy-mm-dd"></date>
 <date format="mm-dd-yyyy"></date>
 
+--------------------------------------------------------------
+
+classic tag 
+
+class XXTag extends TagSupport {
+
+	doStartTag() -> return 
+	doEndTag()   -> return 
+} 
 
 
-
-
+1) no body no attribute 
+	Greet 
 
 
 

@@ -119,7 +119,10 @@
 		 	<taglib-uri>www.google.com/emp/123/stag</taglib-uri>
 		 	<taglib-location>/WEB-INF/stag.tld</taglib-location>
 		 </taglib>
-	
+		<taglib>
+			<taglib-uri>www.google.com/emp/123/ctag</taglib-uri>
+			<taglib-location>/WEB-INF/ctag.tld</taglib-location>
+		</taglib>
 	</jsp-config>
 	
 	

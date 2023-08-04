@@ -1,0 +1,46 @@
+
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+
+	<tag>
+		<name>greet</name>
+		<tag-class>com.google.ctag.GreetTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<name>max</name>
+		<tag-class>com.google.ctag.MaxTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>n1</name>
+			<rtexprvalue>true</rtexprvalue>
+			<required>true</required>
+		</attribute>
+
+		<attribute>
+			<name>n2</name>
+			<rtexprvalue>true</rtexprvalue>
+			<required>true</required>
+		</attribute>
+
+	</tag>
+
+
+	<tag>
+		<name>print</name>
+		<tag-class>com.google.ctag.PrintTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>count</name>
+			<rtexprvalue>true</rtexprvalue>
+			<required>true</required>
+		</attribute>
+	</tag>
+	<tag>
+		<name>mark</name>
+		<tag-class>com.google.ctag.MarkTag</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+</taglib>
